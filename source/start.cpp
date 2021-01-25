@@ -24,9 +24,9 @@ int main()
 
     //image size
     const auto aspect_ratio = 16.0 / 9.0;
-    const int image_width = 1366;
+    const int image_width = 400;
     const int image_height = static_cast<int>(image_width / aspect_ratio);
-    const int samples_per_pixel = 100;
+    const int samples_per_pixel = 1;
 
     //world
     hittable_list world;
@@ -46,7 +46,7 @@ int main()
         for (int i = 0; i < image_width; i++)
         {
             color pixel_color(0, 0, 0);
-            for (int s = 0; i < samples_per_pixel; s++)
+            for (int s = 0; s < samples_per_pixel; s++)
             {
                 auto u = (i + random_double()) / (image_width - 1);
                 auto v = (j + random_double()) / (image_height - 1);
