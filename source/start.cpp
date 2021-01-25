@@ -24,13 +24,9 @@ int main()
 
     //image size
     const auto aspect_ratio = 16.0 / 9.0;
-    const int image_width = 400;
+    const int image_width = 1366;
     const int image_height = static_cast<int>(image_width / aspect_ratio);
-<<<<<<< HEAD
-    const int samples_per_pixel = 1;
-=======
     const int samples_per_pixel = 100;
->>>>>>> old_state
 
     //world
     hittable_list world;
@@ -39,10 +35,6 @@ int main()
 
     //camera
     camera cam;
-<<<<<<< HEAD
-
-=======
->>>>>>> old_state
     //render
     std::cout << "P3\n";
     std::cout << image_width << " " << image_height << "\n";
@@ -53,11 +45,7 @@ int main()
         for (int i = 0; i < image_width; i++)
         {
             color pixel_color(0, 0, 0);
-<<<<<<< HEAD
-            for (int s = 0; s < samples_per_pixel; s++)
-=======
             for (int s = 0; s < samples_per_pixel; ++s)
->>>>>>> old_state
             {
                 auto u = (i + random_double()) / (image_width - 1);
                 auto v = (j + random_double()) / (image_height - 1);
