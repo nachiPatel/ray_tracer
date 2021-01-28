@@ -16,14 +16,6 @@ const double infinity = std::numeric_limits<double>::infinity();
 const double pi = 3.1415926535897932385;
 
 //utility function
-double clamp(double x, double min, double max)
-{
-    if (x < min)
-        return min;
-    if (x > max)
-        return max;
-    return x;
-}
 
 double degree_to_radians(double degree)
 {
@@ -50,7 +42,7 @@ inline double clamp(double x, double min, double max)
 }
 
 //common header
-#include "vec3.h"
-#include "ray.h"
+// #include "vec3.h"
+// #include "ray.h"
 
 #endif
