@@ -1,2 +1,4 @@
 # ray_tracer
-basic ray tracing algo
+Ray Tracing Algorithm is the most successful image synthesizing technique. This technique has a great capability to produce the greatest degree of realism virtually which is more than that of other scanline rendering methods. However, this involves a greater computational cost. Computer graphic has become the most preliminary requirement in the current digital world. Computer graphics come into picture when we need to create an image virtually that looks very real and in fact indistinguishable from a normal photograph taken. There are many ways to achieve this. Ray Tracing is one of such rendering technique. This is used for generating an image by tracing the path of light as pixels in a plane of the image and simulating its effects when encountered with virtual objects.
+
+Compile and image start.cpp file. It will generate a ppm image which you can view online ppm viewer.
